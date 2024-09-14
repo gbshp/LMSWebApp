@@ -1,0 +1,119 @@
+@import url('https://fonts.googleapis.com/css2?family=Inria+Sans:ital,wght@0,300;0,400;0,700;1,300;1,400;1,700&display=swap');
+
+* {
+  margin: 0;
+  padding: 0; 
+  list-style: none;
+  text-decoration: none;
+  box-sizing: border-box;
+}
+
+body {
+  background-image: url("simple-background-backgrounds-passion-simple-1-5c9b95bd34713.png");
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+}
+
+.navbar {
+    font-size: large;
+    background-color: rgba(102, 174, 189, 0.46);
+    padding: 1px 0px 1px 22px;
+    margin: 0;
+    font-family: "Montserrat", serif;
+    font-weight: 500;
+    font-size: 20px;
+    height: 75px;
+}
+
+.course-container {
+    display: flex;
+    flex-direction: column
+    border-style: solid;
+
+}
+
+.course-container .sidenav{
+  width: 130px;
+  background-color: rgba(102, 174, 189, 0.3);
+  flex-grow: 0.5;
+  height: 700px;
+}
+
+
+
+.sidenav a{
+  display: flex;
+  flex-direction: column;
+  padding: 20px 10px 20px 20px;
+  font-size: 25px;
+  text-decoration: none;
+  margin-top: 10%;
+  font-family: "Inria Sans", serif;
+}
+
+.course-body{
+  flex-grow: 16;
+  padding: 25px;
+  display: grid;
+  grid-template-columns: auto auto;
+  grid-template-rows: 60px 200px 200px;
+  row-gap: 20px;
+  column-gap: 20px;
+}
+
+.course-body a{
+  border-style: solid;
+  text-align: center;
+  font-size: 30px;
+  padding: 20px;
+  padding-top: 60px;
+  margin: 10px;
+}
+
+.course-body p{
+  font-size: 36px;
+  padding-bottom: 20px;
+  font-family: "Inria Sans", serif;
+  grid-column: 1 / span 2;
+}
+
+.To-do{
+  flex-grow: 4;
+  padding: 25px;
+  border-left: 3px solid  rgba(102, 174, 189, 0.48);
+  font-size: 30px;
+  font-family: "Inria Sans", serif;
+}
+
+/*.sidenav {
+    height: 100%;
+    width: 160px;
+    position: fixed;
+    z-index: 1;
+    top: 10;
+    left: 0;
+    background-color: rgb(204, 208, 217);
+    overflow-x: hidden;
+    padding-top: 20px;
+    font-family: "Roberto Condensed", serif;
+  }
+  
+  .sidenav a {
+    padding: 6px 8px 6px 16px;
+    text-decoration: none;
+    font-size: 25px;
+    color: #818181;
+    display: block;
+    border-style: solid;
+    margin-top: 15%;
+  }
+  
+  .sidenav a:hover {
+    color: #f1f1f1;
+  }
+  
+  .main {
+    margin-left: 160px; /* Same as the width of the sidenav */
+    font-size: 28px; /* Increased text to enable scrolling */
+    padding: 0px 10px;
+  
